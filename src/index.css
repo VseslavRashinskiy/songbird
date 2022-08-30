@@ -45,14 +45,12 @@ code {
   line-height: 1.25;
   color: #fff;
   background-color: #008966;
-  border-color: #007c5d;
   border: 0 solid transparent;
   cursor: auto;
   text-decoration: none;
 }
 
 .random-bird {
-  display: flex;
   padding: 1rem;
   margin-bottom: 25px;
   background-color: #303030;
@@ -124,17 +122,12 @@ code {
 
 .row {
   display: flex;
-  flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
 }
 
 .row.mb2 {
   position: relative;
-}
-
-.col-md-6 {
-  display: flex;
 }
 
 .list-group {
@@ -144,6 +137,60 @@ code {
   margin-bottom: 0;
 }
 
+.item-list {
+  width: 100%;
+}
+
 .item-list .list-group-item {
   cursor: pointer;
+  padding: 0.85rem 1.25rem;
+  background-color: #303030;
+  border: 1px solid #555;
+}
+
+.item-list .list-group-item-active {
+  cursor: pointer;
+  padding: 0.85rem 1.25rem;
+  background-color: #303030;
+  border: 1px solid green;
+}
+
+.item-list .list-group-item-error {
+  cursor: pointer;
+  padding: 0.85rem 1.25rem;
+  background-color: #303030;
+  border: 1px solid red;
+}
+
+.btn {
+  width: 100%;
+  margin: 25px 15px;
+  background-color: #303030;
+  border: 1px solid #444;
+  color: #fff!important;
+  cursor: auto;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.instruction span {
+  display: block;
+}
+
+.birds-details {
+  display: flex;
+  padding: 1rem;
+  border: 1px solid #444;
+  width: 100%;
+}
+
+.cards {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #303030;
+  background-clip: border-box;
+  border-radius: 0.25rem;
 }
